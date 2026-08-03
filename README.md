@@ -3,7 +3,7 @@
 Landing page for drakmal.com. Links out to project subdomains/dashboards:
 
 - Communicable Disease Dashboard — https://drakmal.github.io/comm_dss_dashboard/
-- ACD Measles Data Collection Form — https://acdmeasles.drakmal.com/
+- ACD Measles Data Collection Form — access restricted, not publicly linked
 - Relocate and Stay Options — https://relocate.drakmal.com/
 - Conference Finder — https://conference-finder.drakmal.com/
 

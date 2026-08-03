@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Drakmal — Public Health Dashboards & Tools</title>
-<meta name="description" content="Drakmal's collection of public health and research tools: Communicable Disease Dashboard, ACD Measles Data Collection Form, Relocate and Stay Options, and Conference Finder.">
+<meta name="description" content="Drakmal's collection of public health and research tools: Communicable Disease Dashboard, Relocate and Stay Options, and Conference Finder.">
 <link rel="canonical" href="https://drakmal.com/">
 
 <meta property="og:type" content="website">
@@ -90,6 +90,8 @@
   }
 
   .card {
+    position: relative;
+    overflow: hidden;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;
@@ -104,6 +106,38 @@
   .card:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-hover);
+  }
+
+  .card .restricted {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: var(--border);
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: not-allowed;
+  }
+
+  .card .lock-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    pointer-events: none;
+    transition: background 0.15s ease, opacity 0.15s ease;
+  }
+
+  .card--locked:hover .lock-overlay {
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 1;
   }
 
   .card .icon {
@@ -174,11 +208,12 @@
     <a href="https://drakmal.github.io/comm_dss_dashboard/" target="_blank" rel="noopener">Open dashboard →</a>
   </div>
 
-  <div class="card">
+  <div class="card card--locked">
     <div class="icon">🩺</div>
     <h2>ACD Measles Data Collection Form</h2>
     <p>Active case detection data collection tool for measles surveillance.</p>
-    <a href="https://acdmeasles.drakmal.com/" target="_blank" rel="noopener">Open form →</a>
+    <span class="restricted">Access restricted</span>
+    <div class="lock-overlay" aria-hidden="true">🔒</div>
   </div>
 
   <div class="card">
