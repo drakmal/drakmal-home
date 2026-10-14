@@ -29,9 +29,10 @@
 | TXT | subdomain-owner-verification | (verification token) | Third-party subdomain ownership verification |
 | TXT | _acme-challenge | (x2 challenge tokens) | Let's Encrypt/ACME certificate validation for subdomains |
 | TXT | _dmarc | v=DMARC1; p=none; | DMARC policy (monitoring only, no enforcement) |
+| TXT | (root) | google-site-verification=(token) | Google Search Console **Domain** property for drakmal.com (verified 2026-10-14; covers all subdomains). Removing it un-verifies Search Console. |
 
-**Do not delete** the wildcard, MX, or TXT records — they support email delivery/auth and cert
-validation for the other subdomains. Only the old root `ALIAS drakmal.com → uixie.porkbun.com`
+**Do not delete** the wildcard, MX, or TXT records — they support email delivery/auth, cert
+validation for the other subdomains, and Google Search Console verification. Only the old root `ALIAS drakmal.com → uixie.porkbun.com`
 record was removed (replaced by the 4 A records above) to stop the domain from showing Porkbun's
 default parking page.
 
