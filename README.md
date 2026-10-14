@@ -6,7 +6,7 @@ Landing page for drakmal.com. Links out to project subdomains/dashboards:
 - ACD Measles Data Collection Form — access restricted, not publicly linked
 - Relocate and Stay Options — https://relocate.drakmal.com/
 - Conference Finder — https://conference-finder.drakmal.com/
-- Malaysia Health Questionnaires Directory — https://questionnaires.drakmal.com/
+- Validated Health Questionnaires in Malaysia — https://questionnaires.drakmal.com/
 
 ## Updating
 
