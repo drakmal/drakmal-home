@@ -19,6 +19,7 @@
 | CNAME | acdmeasles | acdmeasles.netlify.app | ACD Measles Data Collection Form (Netlify) |
 | CNAME | conference-finder | 747d40538a80e68c.vercel-dns-017.com | Conference Finder (Vercel) |
 | CNAME | relocate | ca156c574589803f.vercel-dns-017.com | Relocate and Stay Options (Vercel) |
+| CNAME | questionnaires | drakmal.github.io | Malaysia Health Questionnaires Directory (GitHub Pages, repo `drakmal/questionnaires`) |
 | CNAME | * (wildcard) | uixie.porkbun.com | Catch-all for undefined subdomains → Porkbun parking page |
 | MX | (root) | fwd1.porkbun.com (prio 10), fwd2.porkbun.com (prio 20) | Porkbun email forwarding |
 | MX | send | feedback-smtp.ap-northeast-1.amazonses.com | Amazon SES outbound mail (send.drakmal.com) |
@@ -42,6 +43,7 @@ default parking page.
 | ACD Measles Data Collection Form | access restricted, not publicly linked | Netlify |
 | Relocate and Stay Options | https://relocate.drakmal.com/ | Vercel |
 | Conference Finder | https://conference-finder.drakmal.com/ | Vercel |
+| Malaysia Health Questionnaires Directory | https://questionnaires.drakmal.com/ | GitHub Pages (`drakmal/questionnaires`) |
 
 ## Adding a new project later
 
